@@ -12,7 +12,50 @@
 		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 	</head>
 	<body>
-
+		<div data-role="page">
+			<div data-role="header"><h1>Transparencia</h1></div>
+			<div role="main" class="ui-content">
+				<a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-check ui-btn-icon-left ui-btn-a" data-transition="pop">Iniciar</a>
+				<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+				    <form>
+				        <div style="padding:10px 20px;">
+				            <h3>Por favor Inciar sesion</h3>
+				            <label for="un" class="ui-hidden-accessible">Usuario:</label>
+				            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+				            <label for="pw" class="ui-hidden-accessible">Contraseña:</label>
+				            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+				            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Iniciar</button>
+				        </div>
+				    </form>
+				</div>
+			<ul data-role="listview" data-filter="true" data-filter-placeholder="Busqueda por Municipio..." data-inset="true">
+			    <li><a href="#">Acacias</a></li>
+			    <li><a href="#">Cumaral</a></li>
+			    <li><a href="#">Granada</a></li>
+			    <li><a href="#">San Martin</a></li>
+			    <li><a href="#">Lejanias</a></li>
+			    <li><a href="#">Villavicencio</a></li>
+			</ul>
+			</div>
+			<div data-role="footer">
+				<div data-role="navbar" data-iconpos="bottom">
+		            <ul>
+		                <li><a href="#segunda" data-icon="grid">Mapa</a></li>
+		                <li><a href="#" data-icon="star" class="ui-btn-active">Filtro</a></li>
+		                <li><a href="#" data-icon="gear">Admin</a></li>
+		            </ul>
+		        </div><!-- /navbar -->
+			</div>
+		</div>
+		<div id="segunda" data-role="page">
+			<div data-role="header">Soy Otra</div>
+			<div role="main" class="ui-content">
+			contenido
+			</div>
+			<div data-role="footer">
+				&copy;
+			</div>
+		</div>
 
 	</body>
 </html>
